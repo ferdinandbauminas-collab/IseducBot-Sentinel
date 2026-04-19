@@ -98,71 +98,101 @@ def get_mandatory_slots():
     return mandatory
 
 def get_compliance_stats():
-    # Fetch data from Supabase
-    mandatory = get_mandatory_slots()
-    history_raw = sb_fetch('ef_history')
-    
-    # Agrupar histórico (ef_history no Supabase já está achatado)
-    history_lookup = defaultdict(list)
-    for h in history_raw:
-        # Normalizar data de DD/MM/YYYY para YYYY-MM-DD se necessário
-        dt_str = h['data']
-        if '/' in dt_str:
-            parts = dt_str.split('/')
-            dt_str = f"{parts[2]}-{parts[1]}-{parts[0]}"
-            
-        key = (dt_str, clean_str(h['turma']))
-        history_lookup[key].append({
-            "horario": h['horario'],
-            "professor": clean_str(h['professor']),
-            "discipline": clean_str(h['componente'])
-        })
-
-    stats = defaultdict(lambda: {"total": 0, "done": 0, "gaps": []})
-    realized_slots = set()
-    temp_gaps = defaultdict(lambda: defaultdict(lambda: {"count": 0}))
-
-    for m in mandatory:
-        name_display = m['teacher']
-        p_norm = clean_str(name_display)
-        disc_norm = normalize_discipline(m['discipline'])
-        stats[name_display]["total"] += 1
+    try:
+        # Fetch data from Supabase
+        mandatory = get_mandatory_slots()
+        history_raw = sb_fetch('ef_history')
         
-        hist_key = (m['date'], clean_str(m['turma']))
-        matches = history_lookup.get(hist_key, [])
-        
-        is_done = False
-        for h in matches:
-            if h['professor'] == p_norm:
-                if normalize_discipline(h['discipline']) == disc_norm:
-                    is_done = True
-                    realized_slots.add(f"{m['date']}-{m['turma']}-{m['slot']}")
-                    break
-        
-        if is_done:
-            stats[name_display]["done"] += 1
-        else:
-            date_fmt = datetime.strptime(m['date'], "%Y-%m-%d").strftime("%d/%m")
-            gap_key = (date_fmt, m['turma'], m['discipline'])
-            temp_gaps[name_display][gap_key]["count"] += 1
-            temp_gaps[name_display][gap_key]["turma"] = m['turma']
-            temp_gaps[name_display][gap_key]["discipline"] = m['discipline']
+        # Agrupar histórico
+        history_lookup = defaultdict(list)
+        for h in history_raw:
+            try:
+                dt_str = h.get('data', '')
+                if not dt_str: continue
+                if '/' in dt_str:
+                    parts = dt_str.split('/')
+                    dt_str = f"{parts[2]}-{parts[1]}-{parts[0]}"
+                    
+                key = (dt_str, clean_str(h.get('turma', '')))
+                history_lookup[key].append({
+                    "horario": h.get('horario', ''),
+                    "professor": clean_str(h.get('professor', '')),
+                    "discipline": clean_str(h.get('componente', ''))
+                })
+            except: continue
 
-    for prof in stats:
-        for (date_fmt, turma, disc), data in temp_gaps[prof].items():
-            stats[prof]["gaps"].append({"date": date_fmt, "turma": turma, "discipline": disc, "count": data["count"]})
-        stats[prof]["gaps"].sort(key=lambda x: (x['date'].split('/')[1], x['date'].split('/')[0]))
+        stats = defaultdict(lambda: {"total": 0, "done": 0, "gaps": []})
+        realized_slots = set()
+        temp_gaps = defaultdict(lambda: defaultdict(lambda: {"count": 0}))
 
-    g_total = sum(d['total'] for d in stats.values())
-    g_done = sum(d['done'] for d in stats.values())
-    global_efficiency = round((g_done / g_total * 100), 1) if g_total > 0 else 0
+        for m in mandatory:
+            try:
+                name_display = m.get('teacher', 'PROFESSOR DESCONHECIDO')
+                p_norm = clean_str(name_display)
+                disc_norm = normalize_discipline(m.get('discipline', ''))
+                stats[name_display]["total"] += 1
+                
+                hist_key = (m['date'], clean_str(m['turma']))
+                matches = history_lookup.get(hist_key, [])
+                
+                is_done = False
+                for h in matches:
+                    if h['professor'] == p_norm:
+                        if normalize_discipline(h['discipline']) == disc_norm:
+                            is_done = True
+                            realized_slots.add(f"{m['date']}-{m['turma']}-{m.get('slot', '0')}")
+                            break
+                
+                if is_done:
+                    stats[name_display]["done"] += 1
+                else:
+                    try:
+                        date_fmt = datetime.strptime(m['date'], "%Y-%m-%d").strftime("%d/%m")
+                    except:
+                        date_fmt = "??/??"
+                    gap_key = (date_fmt, m['turma'], m['discipline'])
+                    temp_gaps[name_display][gap_key]["count"] += 1
+                    temp_gaps[name_display][gap_key]["turma"] = m['turma']
+                    temp_gaps[name_display][gap_key]["discipline"] = m['discipline']
+            except Exception as e:
+                print(f"ERRO NO SLOT {m}: {e}")
+                continue
 
-    return stats, len(realized_slots), global_efficiency
+        for prof in stats:
+            for (date_fmt, turma, disc), data in temp_gaps[prof].items():
+                stats[prof]["gaps"].append({"date": date_fmt, "turma": turma, "discipline": disc, "count": data["count"]})
+            stats[prof]["gaps"].sort(key=lambda x: (x['date'].split('/')[1] if '/' in x['date'] else '0', x['date'].split('/')[0] if '/' in x['date'] else '0'))
+
+        g_total = sum(d['total'] for d in stats.values())
+        g_done = sum(d['done'] for d in stats.values())
+        global_efficiency = round((g_done / g_total * 100), 1) if g_total > 0 else 0
+
+        return stats, len(realized_slots), global_efficiency
+    except Exception as e:
+        print(f"CRITICAL ERROR IN STATS: {e}")
+        return {}, 0, 0
+
+@app.route('/debug')
+def debug_info():
+    schedule = sb_fetch('ef_schedule')
+    history = sb_fetch('ef_history')
+    return jsonify({
+        "status": "online",
+        "env_url": SUPABASE_URL[:15] + "...",
+        "schedule_count": len(schedule),
+        "history_count": len(history),
+        "start_date": START_DATE_STR
+    })
 
 @app.route('/')
 def dashboard():
-    stats, realized_count, global_eff = get_compliance_stats()
-    return render_template_string("""
+    try:
+        stats, realized_count, global_eff = get_compliance_stats()
+        # Se stats estiver vazio, talvez o banco não tenha retornado nada
+        if not stats: 
+            return "<h1>Aguardando dados do Supabase...</h1><p>Verifique se as tabelas ef_schedule e ef_history possuem dados.</p>"
+            
+        return render_template_string("""
     <!DOCTYPE html>
     <html lang="pt-br">
     <head>
