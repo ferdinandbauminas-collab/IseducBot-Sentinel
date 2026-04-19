@@ -11,6 +11,7 @@ from datetime import datetime, timedelta
 
 # Sentinel Premium Cloud v1.0 - Vercel Serverless Edition
 app = Flask(__name__)
+application = app
 
 # Configurações de Ambiente (Segurança de Inicialização)
 SUPABASE_URL = os.getenv('SUPABASE_URL', 'https://wkmjoeoankucnhhanbqj.supabase.co')
