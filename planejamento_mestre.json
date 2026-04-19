@@ -1,0 +1,44 @@
+{
+    "professores": {
+        "EUNICE": {
+            "aulas_semanais": 4,
+            "dias_detalhe": {
+                "Terça": 3,
+                "Quinta": 1
+            },
+            "disciplina": "Língua Portuguesa"
+        },
+        "JOANILSON": {
+            "aulas_semanais": 4,
+            "dias_detalhe": {
+                "Quarta": 1,
+                "Quinta": 3
+            },
+            "disciplina": "Soc/Art/Fil/PV"
+        },
+        "WESLEY": {
+            "aulas_semanais": 3,
+            "disciplina": "Matemática"
+        },
+        "ASSUNÇÃO": {
+            "aulas_semanais": 2,
+            "disciplina": "Geografia"
+        },
+        "FRANCISCA": {
+            "aulas_semanais": 2,
+            "disciplina": "História"
+        },
+        "LENINHA": {
+            "aulas_semanais": 2,
+            "disciplina": "Química"
+        },
+        "WILSON": {
+            "aulas_semanais": 2,
+            "disciplina": "Biologia"
+        },
+        "JANDIRA": {
+            "aulas_semanais": 1,
+            "disciplina": "Educação Física"
+        }
+    }
+}

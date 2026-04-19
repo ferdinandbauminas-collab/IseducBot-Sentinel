@@ -1,0 +1,822 @@
+{
+    "SEGUNDA-FEIRA": {
+        "MOD I A": {
+            "1": {
+                "teacher": "GEMILSON",
+                "discipline": "MATEMÁTICA"
+            },
+            "2": {
+                "teacher": "GEMILSON",
+                "discipline": "MATEMÁTICA"
+            },
+            "3": {
+                "teacher": "FRANCISCA DA SILVA SOUSA",
+                "discipline": "HISTÓRIA"
+            },
+            "4": {
+                "teacher": "ALEXSANDRA MARIA LINARD PAES LANDIM",
+                "discipline": "LÍNGUA PORTUGUESA"
+            }
+        },
+        "MOD I A ALT": {
+            "1": {
+                "teacher": "FRANCISCA DA SILVA SOUSA",
+                "discipline": "HISTÓRIA"
+            },
+            "2": {
+                "teacher": "EDNARDO FERREIRA DE SOUSA",
+                "discipline": "FÍSICA"
+            },
+            "3": {
+                "teacher": "EDNARDO FERREIRA DE SOUSA",
+                "discipline": "FÍSICA"
+            },
+            "4": {
+                "teacher": "GEMILSON",
+                "discipline": "MATEMÁTICA"
+            }
+        },
+        "MOD III A": {
+            "1": {
+                "teacher": "FRANCINEUDA DA SILVA SOUSA",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "2": {
+                "teacher": "FRANCINEUDA DA SILVA SOUSA",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "3": {
+                "teacher": "MARCOS AURELIO MATOS DOS SANTOS",
+                "discipline": "REDES DE COMPUTADORES"
+            },
+            "4": {
+                "teacher": "DENILSON DAVID DA SILVA SANTOS",
+                "discipline": "BANCO DE DADOS"
+            }
+        },
+        "MOD III B": {
+            "1": {
+                "teacher": "DENILSON DAVID DA SILVA SANTOS",
+                "discipline": "REDES DE COMPUTADORES"
+            },
+            "2": {
+                "teacher": "DENILSON DAVID DA SILVA SANTOS",
+                "discipline": "REDES DE COMPUTADORES"
+            },
+            "3": {
+                "teacher": "DENILSON DAVID DA SILVA SANTOS",
+                "discipline": "BANCO DE DADOS"
+            },
+            "4": {
+                "teacher": "FRANCINEUDA DA SILVA SOUSA",
+                "discipline": "LÍNGUA PORTUGUESA"
+            }
+        },
+        "MOD V A": {
+            "1": {
+                "teacher": "MARCOS AURELIO MATOS DOS SANTOS",
+                "discipline": "PROJETO DE DESENVOLVIMENTO DE SISTEMAS"
+            },
+            "2": {
+                "teacher": "MARCOS AURELIO MATOS DOS SANTOS",
+                "discipline": "PROJETO DE APRENDIZAGEM INTERDISCIPLINAR"
+            },
+            "3": {
+                "teacher": "FRANCINEUDA DA SILVA SOUSA",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "4": {
+                "teacher": "MARCOS AURELIO MATOS DOS SANTOS",
+                "discipline": "EMPREENDEDORISMO PARA TI"
+            }
+        },
+        "MOD V B": {
+            "2": {
+                "teacher": "LUCIANO DE OLIVEIRA CHAVES",
+                "discipline": "PROJETO DE APRENDIZAGEM INTERDISCIPLINAR"
+            },
+            "3": {
+                "teacher": "LUCIANO DE OLIVEIRA CHAVES",
+                "discipline": "EMPREENDEDORISMO PARA TI"
+            },
+            "4": {
+                "teacher": "FRANCISCA DA SILVA SOUSA",
+                "discipline": "HISTÓRIA"
+            },
+            "1": {
+                "teacher": "GERSON DOS SANTOS",
+                "discipline": "ELETIVA"
+            }
+        },
+        "MOD V C": {
+            "1": {
+                "teacher": "LUCIANO DE OLIVEIRA CHAVES",
+                "discipline": "EMPREENDEDORISMO PARA TI"
+            },
+            "2": {
+                "teacher": "FRANCISCA DA SILVA SOUSA",
+                "discipline": "HISTÓRIA"
+            },
+            "4": {
+                "teacher": "LUCIANO DE OLIVEIRA CHAVES",
+                "discipline": "PROJETO DE APRENDIZAGEM INTERDISCIPLINAR"
+            },
+            "3": {
+                "teacher": "GERSON DOS SANTOS",
+                "discipline": "ELETIVA"
+            }
+        },
+        "MOD V D": {
+            "1": {
+                "teacher": "SALOMÃO",
+                "discipline": "PROJETO DE DESENVOLVIMENTO DE SISTEMAS"
+            },
+            "2": {
+                "teacher": "ALEXSANDRA MARIA LINARD PAES LANDIM",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "3": {
+                "teacher": "ALEXSANDRA MARIA LINARD PAES LANDIM",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "4": {
+                "teacher": "SALOMÃO",
+                "discipline": "PROJETO DE DESENVOLVIMENTO DE SISTEMAS"
+            }
+        },
+        "MOD I A MARK": {
+            "1": {
+                "teacher": "EDNARDO FERREIRA DE SOUSA",
+                "discipline": "FÍSICA"
+            },
+            "2": {
+                "teacher": "GERSON DOS SANTOS",
+                "discipline": "FDA"
+            },
+            "3": {
+                "teacher": "GEMILSON",
+                "discipline": "MATEMÁTICA"
+            },
+            "4": {
+                "teacher": "ITALA RODRIGUES PROBO",
+                "discipline": "REDAÇÃO PARA O MARKETING DIGITAL (RPMD)"
+            }
+        }
+    },
+    "TERÇA-FEIRA": {
+        "MOD I A": {
+            "1": {
+                "teacher": "ALEXSANDRA MARIA LINARD PAES LANDIM",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "2": {
+                "teacher": "ALEXSANDRA MARIA LINARD PAES LANDIM",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "3": {
+                "teacher": "JORGE LUÍS SÁ BEZERRA",
+                "discipline": "FÍSICA"
+            },
+            "4": {
+                "teacher": "DANIEL MAGALHAES CHAVES",
+                "discipline": "FILOSOFIA"
+            }
+        },
+        "MOD I A ALT": {
+            "1": {
+                "teacher": "MARIA EUNICE LIRA TEIXEIRA ANDRADE",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "2": {
+                "teacher": "HELANNE BEATRIZ SILVA OLIVEIRA",
+                "discipline": "BIOLOGIA"
+            },
+            "3": {
+                "teacher": "MARIA EUNICE LIRA TEIXEIRA ANDRADE",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "4": {
+                "teacher": "CARLOS AUGUSTO",
+                "discipline": "ED. FÍSICA A"
+            }
+        },
+        "MOD III A": {
+            "1": {
+                "teacher": "WESLEY BEZERRA PORTELA FREITAS",
+                "discipline": "MATEMÁTICA"
+            },
+            "2": {
+                "teacher": "WESLEY BEZERRA PORTELA FREITAS",
+                "discipline": "MATEMÁTICA"
+            },
+            "3": {
+                "teacher": "SALOMÃO",
+                "discipline": "ELETIVA"
+            },
+            "4": {
+                "teacher": "MARCOS AURELIO MATOS DOS SANTOS",
+                "discipline": "PROGRAMAÇÃO PARA COMPUTADORES"
+            }
+        },
+        "MOD III B": {
+            "1": {
+                "teacher": "FRANCINEUDA DA SILVA SOUSA",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "3": {
+                "teacher": "WESLEY BEZERRA PORTELA FREITAS",
+                "discipline": "MATEMÁTICA"
+            },
+            "4": {
+                "teacher": "WESLEY BEZERRA PORTELA FREITAS",
+                "discipline": "MATEMÁTICA"
+            },
+            "2": {
+                "teacher": "GERSON DOS SANTOS",
+                "discipline": "PROJETO DE APRENDIZAGEM INTERDISCIPLINAR"
+            }
+        },
+        "MOD V A": {
+            "1": {
+                "teacher": "DANIEL MAGALHAES CHAVES",
+                "discipline": "SOCIOLOGIA"
+            },
+            "2": {
+                "teacher": "MARCOS AURELIO MATOS DOS SANTOS",
+                "discipline": "ELETIVA"
+            },
+            "3": {
+                "teacher": "MARCOS AURELIO MATOS DOS SANTOS",
+                "discipline": "EMPREENDEDORISMO PARA TI"
+            },
+            "4": {
+                "teacher": "JORGE LUÍS SÁ BEZERRA",
+                "discipline": "FÍSICA"
+            }
+        },
+        "MOD V B": {
+            "1": {
+                "teacher": "JORGE LUÍS SÁ BEZERRA",
+                "discipline": "FÍSICA"
+            },
+            "2": {
+                "teacher": "DANIEL MAGALHAES CHAVES",
+                "discipline": "SOCIOLOGIA"
+            },
+            "3": {
+                "teacher": "FRANCINEUDA DA SILVA SOUSA",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "4": {
+                "teacher": "FRANCINEUDA DA SILVA SOUSA",
+                "discipline": "LÍNGUA PORTUGUESA"
+            }
+        },
+        "MOD V C": {
+            "1": {
+                "teacher": "SEM PROFESSOR 5",
+                "discipline": "PROJETO DE DESENVOLVIMENTO DE SISTEMAS"
+            },
+            "2": {
+                "teacher": "LUCIANO DE OLIVEIRA CHAVES",
+                "discipline": "EMPREENDEDORISMO PARA TI"
+            },
+            "3": {
+                "teacher": "HELANNE BEATRIZ SILVA OLIVEIRA",
+                "discipline": "BIOLOGIA"
+            },
+            "4": {
+                "teacher": "LINDELVÂNIA",
+                "discipline": "LE"
+            }
+        },
+        "MOD V D": {
+            "1": {
+                "teacher": "LINDELVÂNIA",
+                "discipline": "LE"
+            },
+            "3": {
+                "teacher": "DANIEL MAGALHAES CHAVES",
+                "discipline": "SOCIOLOGIA"
+            },
+            "4": {
+                "teacher": "HELANNE BEATRIZ SILVA OLIVEIRA",
+                "discipline": "BIOLOGIA"
+            },
+            "2": {
+                "teacher": "SEM PROFESSOR",
+                "discipline": "ELETIVA"
+            }
+        },
+        "MOD I A MARK": {
+            "2": {
+                "teacher": "MARIA EUNICE LIRA TEIXEIRA ANDRADE",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "3": {
+                "teacher": "LINDELVÂNIA",
+                "discipline": "LÍNGUA INGLESA"
+            },
+            "4": {
+                "teacher": "MARIA EUNICE LIRA TEIXEIRA ANDRADE",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "1": {
+                "teacher": "GERSON DOS SANTOS",
+                "discipline": "INTRODUÇÃO AO MARKETING"
+            }
+        }
+    },
+    "QUARTA-FEIRA": {
+        "MOD I A": {
+            "1": {
+                "teacher": "LINDELVÂNIA",
+                "discipline": "LÍNGUA INGLESA"
+            },
+            "2": {
+                "teacher": "LINDELVÂNIA",
+                "discipline": "INGLÊS INSTRUMENTAL"
+            },
+            "3": {
+                "teacher": "SEM PROFESSOR 4",
+                "discipline": "ANAL. LÓG."
+            },
+            "4": {
+                "teacher": "GERSON DOS SANTOS",
+                "discipline": "PROJETO DE APRENDIZAGEM INTERDISCIPLINAR"
+            }
+        },
+        "MOD I A ALT": {
+            "2": {
+                "teacher": "GEMILSON",
+                "discipline": "MATEMÁTICA"
+            },
+            "4": {
+                "teacher": "GEMILSON",
+                "discipline": "MATEMÁTICA"
+            },
+            "1": {
+                "teacher": "DANIEL MAGALHAES CHAVES",
+                "discipline": "FILOSOFIA"
+            },
+            "3": {
+                "teacher": "HELANNE BEATRIZ SILVA OLIVEIRA",
+                "discipline": "BIOLOGIA"
+            }
+        },
+        "MOD III A": {
+            "1": {
+                "teacher": "JORGE LUÍS SÁ BEZERRA",
+                "discipline": "FÍSICA"
+            },
+            "2": {
+                "teacher": "HELANNE BEATRIZ SILVA OLIVEIRA",
+                "discipline": "BIOLOGIA"
+            },
+            "4": {
+                "teacher": "JOSE DE ASSUNCAO SOUSA BARBOSA",
+                "discipline": "GEOGRAFIA"
+            },
+            "3": {
+                "teacher": "ITALA RODRIGUES PROBO",
+                "discipline": "PROJETO DE APRENDIZAGEM INTERDISCIPLINAR"
+            }
+        },
+        "MOD III B": {
+            "2": {
+                "teacher": "FRANCISCA DA SILVA SOUSA",
+                "discipline": "HISTÓRIA"
+            },
+            "4": {
+                "teacher": "JORGE LUÍS SÁ BEZERRA",
+                "discipline": "FÍSICA"
+            },
+            "1": {
+                "teacher": "HELANNE BEATRIZ SILVA OLIVEIRA",
+                "discipline": "BIOLOGIA"
+            },
+            "3": {
+                "teacher": "JOSE DE ASSUNCAO SOUSA BARBOSA",
+                "discipline": "GEOGRAFIA"
+            }
+        },
+        "MOD V A": {
+            "2": {
+                "teacher": "WESLEY BEZERRA PORTELA FREITAS",
+                "discipline": "MATEMÁTICA"
+            },
+            "4": {
+                "teacher": "HELANNE BEATRIZ SILVA OLIVEIRA",
+                "discipline": "BIOLOGIA"
+            },
+            "1": {
+                "teacher": "JOSE DE ASSUNCAO SOUSA BARBOSA",
+                "discipline": "GEOGRAFIA"
+            },
+            "3": {
+                "teacher": "FRANCISCA DA SILVA SOUSA",
+                "discipline": "HISTÓRIA"
+            }
+        },
+        "MOD V B": {
+            "1": {
+                "teacher": "LUCIANO DE OLIVEIRA CHAVES",
+                "discipline": "EMPREENDEDORISMO PARA TI"
+            },
+            "2": {
+                "teacher": "LUCIANO DE OLIVEIRA CHAVES",
+                "discipline": "EMPREENDEDORISMO PARA TI"
+            },
+            "3": {
+                "teacher": "WESLEY BEZERRA PORTELA FREITAS",
+                "discipline": "MATEMÁTICA"
+            },
+            "4": {
+                "teacher": "WESLEY BEZERRA PORTELA FREITAS",
+                "discipline": "MATEMÁTICA"
+            }
+        },
+        "MOD V C": {
+            "1": {
+                "teacher": "SEM PROFESSOR 5",
+                "discipline": "PROJETO DE DESENVOLVIMENTO DE SISTEMAS"
+            },
+            "2": {
+                "teacher": "JORGE LUÍS SÁ BEZERRA",
+                "discipline": "FÍSICA"
+            },
+            "3": {
+                "teacher": "LUCIANO DE OLIVEIRA CHAVES",
+                "discipline": "EMPREENDEDORISMO PARA TI"
+            },
+            "4": {
+                "teacher": "SEM PROFESSOR 5",
+                "discipline": "PROJETO DE DESENVOLVIMENTO DE SISTEMAS"
+            }
+        },
+        "MOD V D": {
+            "1": {
+                "teacher": "WESLEY BEZERRA PORTELA FREITAS",
+                "discipline": "MATEMÁTICA"
+            },
+            "2": {
+                "teacher": "JOSE DE ASSUNCAO SOUSA BARBOSA",
+                "discipline": "GEOGRAFIA"
+            },
+            "3": {
+                "teacher": "JORGE LUÍS SÁ BEZERRA",
+                "discipline": "FÍSICA"
+            },
+            "4": {
+                "teacher": "JARBAS",
+                "discipline": "PROJETO DE APRENDIZAGEM INTERDISCIPLINAR"
+            }
+        },
+        "MOD I A MARK": {
+            "1": {
+                "teacher": "GEMILSON",
+                "discipline": "MATEMÁTICA"
+            },
+            "4": {
+                "teacher": "FRANCISCA DA SILVA SOUSA",
+                "discipline": "HISTÓRIA"
+            },
+            "2": {
+                "teacher": "ITALA RODRIGUES PROBO",
+                "discipline": "REDAÇÃO PARA O MARKETING DIGITAL (RPMD)"
+            },
+            "3": {
+                "teacher": "GERSON DOS SANTOS",
+                "discipline": "PROJETO DE APRENDIZAGEM INTERDISCIPLINAR"
+            }
+        }
+    },
+    "QUINTA-FEIRA": {
+        "MOD I A": {
+            "1": {
+                "teacher": "SEM PROFESSOR 4",
+                "discipline": "ANAL. LÓG."
+            },
+            "3": {
+                "teacher": "HELANNE BEATRIZ SILVA OLIVEIRA",
+                "discipline": "BIOLOGIA"
+            },
+            "4": {
+                "teacher": "JOSE DE ASSUNCAO SOUSA BARBOSA",
+                "discipline": "GEOGRAFIA"
+            },
+            "2": {
+                "teacher": "CARLOS AUGUSTO",
+                "discipline": "ED. FÍSICA A"
+            }
+        },
+        "MOD I A ALT": {
+            "1": {
+                "teacher": "FRANCISCA DA SILVA SOUSA",
+                "discipline": "HISTÓRIA"
+            },
+            "2": {
+                "teacher": "FRANCISCO JR",
+                "discipline": "QUÍMICA"
+            },
+            "3": {
+                "teacher": "FRANCISCO JR",
+                "discipline": "QUÍMICA"
+            },
+            "4": {
+                "teacher": "FRANCISCO JR",
+                "discipline": "PROJETO DE VIDA"
+            }
+        },
+        "MOD III A": {
+            "1": {
+                "teacher": "DENILSON DAVID DA SILVA SANTOS",
+                "discipline": "BANCO DE DADOS"
+            },
+            "2": {
+                "teacher": "MARCOS AURELIO MATOS DOS SANTOS",
+                "discipline": "REDES DE COMPUTADORES"
+            },
+            "4": {
+                "teacher": "FRANCISCA DA SILVA SOUSA",
+                "discipline": "HISTÓRIA"
+            },
+            "3": {
+                "teacher": "MARCOS AURELIO MATOS DOS SANTOS",
+                "discipline": "PROGRAMAÇÃO PARA COMPUTADORES"
+            }
+        },
+        "MOD III B": {
+            "1": {
+                "teacher": "WILSILENE DOS SANTOS OLIVEIRA BRANDÃO",
+                "discipline": "QUÍMICA"
+            },
+            "2": {
+                "teacher": "DENILSON DAVID DA SILVA SANTOS",
+                "discipline": "BANCO DE DADOS"
+            },
+            "3": {
+                "teacher": "DENILSON DAVID DA SILVA SANTOS",
+                "discipline": "PROGRAMAÇÃO PARA COMPUTADORES"
+            },
+            "4": {
+                "teacher": "DENILSON DAVID DA SILVA SANTOS",
+                "discipline": "PROGRAMAÇÃO PARA COMPUTADORES"
+            }
+        },
+        "MOD V A": {
+            "1": {
+                "teacher": "MARCOS AURELIO MATOS DOS SANTOS",
+                "discipline": "PROJETO DE DESENVOLVIMENTO DE SISTEMAS"
+            },
+            "2": {
+                "teacher": "WILSILENE DOS SANTOS OLIVEIRA BRANDÃO",
+                "discipline": "QUÍMICA"
+            },
+            "3": {
+                "teacher": "FRANCINEUDA DA SILVA SOUSA",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "4": {
+                "teacher": "MARCOS AURELIO MATOS DOS SANTOS",
+                "discipline": "PROJETO DE DESENVOLVIMENTO DE SISTEMAS"
+            }
+        },
+        "MOD V B": {
+            "2": {
+                "teacher": "HELANNE BEATRIZ SILVA OLIVEIRA",
+                "discipline": "BIOLOGIA"
+            },
+            "3": {
+                "teacher": "JOSE DE ASSUNCAO SOUSA BARBOSA",
+                "discipline": "GEOGRAFIA"
+            },
+            "4": {
+                "teacher": "WILSILENE DOS SANTOS OLIVEIRA BRANDÃO",
+                "discipline": "QUÍMICA"
+            },
+            "1": {
+                "teacher": "SEM PROFESSOR 5",
+                "discipline": "PROJETO DE DESENVOLVIMENTO DE SISTEMAS"
+            }
+        },
+        "MOD V C": {
+            "1": {
+                "teacher": "FRANCINEUDA DA SILVA SOUSA",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "2": {
+                "teacher": "FRANCINEUDA DA SILVA SOUSA",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "3": {
+                "teacher": "WILSILENE DOS SANTOS OLIVEIRA BRANDÃO",
+                "discipline": "QUÍMICA"
+            },
+            "4": {
+                "teacher": "SEM PROFESSOR 5",
+                "discipline": "PROJETO DE DESENVOLVIMENTO DE SISTEMAS"
+            }
+        },
+        "MOD V D": {
+            "1": {
+                "teacher": "SALOMÃO",
+                "discipline": "PROJETO DE DESENVOLVIMENTO DE SISTEMAS"
+            },
+            "2": {
+                "teacher": "FRANCISCA DA SILVA SOUSA",
+                "discipline": "HISTÓRIA"
+            },
+            "3": {
+                "teacher": "SALOMÃO",
+                "discipline": "EMPREENDEDORISMO PARA TI"
+            },
+            "4": {
+                "teacher": "SALOMÃO",
+                "discipline": "EMPREENDEDORISMO PARA TI"
+            }
+        },
+        "MOD I A MARK": {
+            "2": {
+                "teacher": "GERSON DOS SANTOS",
+                "discipline": "TAVDA"
+            },
+            "4": {
+                "teacher": "HELANNE BEATRIZ SILVA OLIVEIRA",
+                "discipline": "BIOLOGIA"
+            },
+            "1": {
+                "teacher": "GERSON DOS SANTOS",
+                "discipline": "ELETIVA ORIENTADA"
+            },
+            "3": {
+                "teacher": "CARLOS AUGUSTO",
+                "discipline": "ED. FÍSICA A"
+            }
+        }
+    },
+    "SEXTA-FEIRA": {
+        "MOD I A": {
+            "1": {
+                "teacher": "DENILSON DAVID DA SILVA SANTOS",
+                "discipline": "INFORMA TICA APLICADA A"
+            },
+            "2": {
+                "teacher": "DENILSON DAVID DA SILVA SANTOS",
+                "discipline": "INFORMA TICA APLICADA A"
+            },
+            "3": {
+                "teacher": "DENILSON DAVID DA SILVA SANTOS",
+                "discipline": "ELETIVA"
+            },
+            "4": {
+                "teacher": "WILSILENE DOS SANTOS OLIVEIRA BRANDÃO",
+                "discipline": "QUÍMICA"
+            }
+        },
+        "MOD I A ALT": {
+            "1": {
+                "teacher": "MARIA EUNICE LIRA TEIXEIRA ANDRADE",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "2": {
+                "teacher": "JOSE DE ASSUNCAO SOUSA BARBOSA",
+                "discipline": "GEOGRAFIA"
+            },
+            "3": {
+                "teacher": "JOANA DARC",
+                "discipline": "ARTE"
+            },
+            "4": {
+                "teacher": "CARMEN",
+                "discipline": "LÍNGUA INGLESA"
+            }
+        },
+        "MOD III A": {
+            "1": {
+                "teacher": "JOANA DARC",
+                "discipline": "ARTE"
+            },
+            "2": {
+                "teacher": "WILSILENE DOS SANTOS OLIVEIRA BRANDÃO",
+                "discipline": "QUÍMICA"
+            },
+            "3": {
+                "teacher": "CARMEN",
+                "discipline": "LÍNGUA INGLESA"
+            },
+            "4": {
+                "teacher": "DANIEL MAGALHAES CHAVES",
+                "discipline": "FILOSOFIA"
+            }
+        },
+        "MOD III B": {
+            "1": {
+                "teacher": "DANIEL MAGALHAES CHAVES",
+                "discipline": "FILOSOFIA"
+            },
+            "2": {
+                "teacher": "CARMEN",
+                "discipline": "LÍNGUA INGLESA"
+            },
+            "3": {
+                "teacher": "SALOMÃO",
+                "discipline": "ELETIVA"
+            },
+            "4": {
+                "teacher": "JOANA DARC",
+                "discipline": "ARTE"
+            }
+        },
+        "MOD V A": {
+            "1": {
+                "teacher": "MARCOS AURELIO MATOS DOS SANTOS",
+                "discipline": "EMPREENDEDORISMO PARA TI"
+            },
+            "2": {
+                "teacher": "WESLEY BEZERRA PORTELA FREITAS",
+                "discipline": "MATEMÁTICA"
+            },
+            "4": {
+                "teacher": "MARCOS AURELIO MATOS DOS SANTOS",
+                "discipline": "PROJETO DE DESENVOLVIMENTO DE SISTEMAS"
+            },
+            "3": {
+                "teacher": "ELLYDA",
+                "discipline": "LE"
+            }
+        },
+        "MOD V B": {
+            "2": {
+                "teacher": "SEM PROFESSOR 5",
+                "discipline": "PROJETO DE DESENVOLVIMENTO DE SISTEMAS"
+            },
+            "3": {
+                "teacher": "SEM PROFESSOR 5",
+                "discipline": "PROJETO DE DESENVOLVIMENTO DE SISTEMAS"
+            },
+            "4": {
+                "teacher": "SEM PROFESSOR 5",
+                "discipline": "PROJETO DE DESENVOLVIMENTO DE SISTEMAS"
+            },
+            "1": {
+                "teacher": "ELLYDA",
+                "discipline": "LE"
+            }
+        },
+        "MOD V C": {
+            "1": {
+                "teacher": "JOSE DE ASSUNCAO SOUSA BARBOSA",
+                "discipline": "GEOGRAFIA"
+            },
+            "2": {
+                "teacher": "DANIEL MAGALHAES CHAVES",
+                "discipline": "SOCIOLOGIA"
+            },
+            "3": {
+                "teacher": "WESLEY BEZERRA PORTELA FREITAS",
+                "discipline": "MATEMÁTICA"
+            },
+            "4": {
+                "teacher": "WESLEY BEZERRA PORTELA FREITAS",
+                "discipline": "MATEMÁTICA"
+            }
+        },
+        "MOD V D": {
+            "1": {
+                "teacher": "WESLEY BEZERRA PORTELA FREITAS",
+                "discipline": "MATEMÁTICA"
+            },
+            "2": {
+                "teacher": "SALOMÃO",
+                "discipline": "PROJETO DE DESENVOLVIMENTO DE SISTEMAS"
+            },
+            "3": {
+                "teacher": "WILSILENE DOS SANTOS OLIVEIRA BRANDÃO",
+                "discipline": "QUÍMICA"
+            },
+            "4": {
+                "teacher": "SALOMÃO",
+                "discipline": "EMPREENDEDORISMO PARA TI"
+            }
+        },
+        "MOD I A MARK": {
+            "1": {
+                "teacher": "WILSILENE DOS SANTOS OLIVEIRA BRANDÃO",
+                "discipline": "QUÍMICA"
+            },
+            "2": {
+                "teacher": "MARIA EUNICE LIRA TEIXEIRA ANDRADE",
+                "discipline": "LÍNGUA PORTUGUESA"
+            },
+            "3": {
+                "teacher": "DANIEL MAGALHAES CHAVES",
+                "discipline": "FILOSOFIA"
+            },
+            "4": {
+                "teacher": "JOSE DE ASSUNCAO SOUSA BARBOSA",
+                "discipline": "GEOGRAFIA"
+            }
+        }
+    }
+}
