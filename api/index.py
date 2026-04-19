@@ -12,11 +12,16 @@ from datetime import datetime, timedelta
 # Sentinel Premium Cloud v1.0 - Vercel Serverless Edition
 app = Flask(__name__)
 
-# Configurações de Ambiente (Devem ser configuradas no painel do Vercel)
+# Configurações de Ambiente (Segurança de Inicialização)
 SUPABASE_URL = os.getenv('SUPABASE_URL', 'https://wkmjoeoankucnhhanbqj.supabase.co')
 SUPABASE_KEY = os.getenv('SUPABASE_KEY', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndrbWpvZW9hbmt1Y25oaGFuYnFqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzEwNzA2OTMsImV4cCI6MjA4NjY0NjY5M30.lCcKfDP-Zv56VtXxXtdaNjspO8FidkqIryd0ssdQYsM')
 START_DATE_STR = os.getenv('START_DATE', '2026-02-19')
-START_DATE = datetime.strptime(START_DATE_STR, '%Y-%m-%d')
+
+def get_start_date():
+    try:
+        return datetime.strptime(START_DATE_STR, '%Y-%m-%d')
+    except:
+        return datetime(2026, 2, 19)
 
 TURMAS_AUDITADAS = [
     "MOD I A", "MOD I A ALT", "MOD I A MARK",
@@ -63,7 +68,7 @@ def get_mandatory_slots():
     }
     
     mandatory = []
-    current = START_DATE
+    current = get_start_date()
     end_date = datetime.now() + timedelta(days=1)
     
     # Criar um lookup eficiente
